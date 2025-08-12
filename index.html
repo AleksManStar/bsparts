@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Original Auto Parts</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/script.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="logo">AutoParts</div>
+    <nav>
+        <select id="languageSwitcher">
+            <option value="en">EN</option>
+            <option value="es">ES</option>
+            <option value="de">DE</option>
+            <option value="fr">FR</option>
+            <option value="ru">RU</option>
+            <option value="cn">中文</option>
+            <option value="ar">AR</option>
+        </select>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1 data-i18n="title">Original Spare Parts for Cars & Trucks</h1>
+    <p data-i18n="subtitle">Worldwide delivery of certified OEM auto parts</p>
+</section>
+
+<section class="about">
+    <h2 data-i18n="about_title">About Us</h2>
+    <p data-i18n="about_text">We supply only genuine spare parts for passenger cars and trucks, ensuring quality and reliability worldwide.</p>
+</section>
+
+<section class="categories">
+    <h2 data-i18n="categories_title">Categories</h2>
+    <div class="cat">
+        <div><strong data-i18n="cat_passenger">Passenger Cars</strong></div>
+        <div><strong data-i18n="cat_trucks">Trucks</strong></div>
+    </div>
+</section>
+
+<section class="advantages">
+    <h2 data-i18n="advantages_title">Why Choose Us</h2>
+    <ul>
+        <li data-i18n="adv_quality">100% Genuine OEM Parts</li>
+        <li data-i18n="adv_delivery">Worldwide Fast Delivery</li>
+        <li data-i18n="adv_warranty">Warranty on All Products</li>
+    </ul>
+</section>
+
+<section class="contact">
+    <h2 data-i18n="contact_title">Contact Us</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit" data-i18n="send_button">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 AutoParts</p>
+</footer>
+</body>
+</html>
