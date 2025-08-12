@@ -1,1 +1,2 @@
-exclude: - assets/css
+exclude: 
+- assets/css
