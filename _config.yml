@@ -1,2 +1,7 @@
-exclude: 
-- assets/css
+title: bsparts
+discription: bsparts.info
+exclude:
+  - assets/css
+theme: minima
+plugins:
+  - jeky-feed
