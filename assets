@@ -1,4 +1,0 @@
-touch assets/.keep
-git add assets/.keep
-git commit -m
-git push

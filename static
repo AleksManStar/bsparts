@@ -1,0 +1,5 @@
+mv assets static
+git add static
+git rm -r assets
+commit -m
+git push
