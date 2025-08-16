@@ -7,21 +7,7 @@
 <link rel="stylesheet" href="style.css">
 <script src="assets/script.js" defer></script>
 </head>
-body {
-margin: 0; /* убираем дефолтные отступы браузера */
-min-height: 100vh; /* растягиваем на всю высоту экрана */
-background: url("background.jpg") no-repeat center center;
-background-size: cover; /* фон всегда покрывает весь экран */
-background-attachment: fixed; /* фон фиксируется при скролле */
-}
 
-/* Для мобильных устройств — чтобы не было багов с background-attachment */
-@media (max-width: 768px) {
-body {
-background-attachment: scroll; /* убираем фиксированный фон */
-background-position: center top; /* можно немного сдвинуть вверх */
-}
-}
 <header>
     <div class="logo">AutoParts</div>
     <nav>
