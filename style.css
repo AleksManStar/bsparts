@@ -1,1 +1,4 @@
-background.image.url.css
+body {
+    background: url("https://raw.githubusercontent.com/ТВОЙ_НИК/РЕПО/main/assets/images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
