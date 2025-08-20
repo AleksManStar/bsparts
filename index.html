@@ -1,91 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Original Auto Parts</title>
-<link rel="stylesheet" href="style.css">
-<script src="assets/script.js" defer></script>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Original Auto Parts</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="assets/script.js" defer></script>
-
-    <style>
-        body {
-            margin: 0;
-            min-height: 100vh;
-            background: url("background.jpg") no-repeat center center;
-            background-size: cover;
-            background-attachment: fixed;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                background-attachment: scroll;
-                background-position: center top;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оригинальные запчасти</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url("https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/assets/images/background.jpg") no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+    .content {
+      background: rgba(0, 0, 0, 0.6); /* затемнение */
+      color: #fff; /* белый текст */
+      text-align: center;
+      padding: 40px;
+      border-radius: 15px;
+      max-width: 600px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #ffcc00;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #ffaa00;
+    }
+  </style>
 </head>
 <body>
-<link rel="stylesheet" href="style.css">
-<header>
-    <div class="logo">AutoParts</div>
-    <nav>
-        <select id="languageSwitcher">
-            <option value="en">EN</option>
-            <option value="es">ES</option>
-            <option value="de">DE</option>
-            <option value="fr">FR</option>
-            <option value="ru">RU</option>
-            <option value="cn">中文</option>
-            <option value="ar">AR</option>
-        </select>
-    </nav>
-</header>
-
-<section class="hero">
-    <h1 data-i18n="title">Original Spare Parts for Cars & Trucks</h1>
-    <p data-i18n="subtitle">Worldwide delivery of certified OEM auto parts</p>
-</section>
-
-<section class="about">
-    <h2 data-i18n="about_title">About Us</h2>
-    <p data-i18n="about_text">We supply only genuine spare parts for passenger cars and trucks, ensuring quality and reliability worldwide.</p>
-</section>
-
-<section class="categories">
-    <h2 data-i18n="categories_title">Categories</h2>
-    <div class="cat">
-        <div><strong data-i18n="cat_passenger">Passenger Cars</strong></div>
-        <div><strong data-i18n="cat_trucks">Trucks</strong></div>
-    </div>
-</section>
-
-<section class="advantages">
-    <h2 data-i18n="advantages_title">Why Choose Us</h2>
-    <ul>
-        <li data-i18n="adv_quality">100% Genuine OEM Parts</li>
-        <li data-i18n="adv_delivery">Worldwide Fast Delivery</li>
-        <li data-i18n="adv_warranty">Warranty on All Products</li>
-    </ul>
-</section>
-
-<section class="contact">
-    <h2 data-i18n="contact_title">Contact Us</h2>
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Message" required></textarea>
-        <button type="submit" data-i18n="send_button">Send</button>
-    </form>
-</section>
-
-<footer>
-    <p>© 2025 AutoParts</p>
-</footer>
+  <div class="content">
+    <h1>Оригинальные запчасти</h1>
+    <p>Запчасти для легковых и грузовых автомобилей<br>Доставка по всему миру</p>
+    <a href="mailto:info@bsParts.info" class="btn">Связаться с нами</a>
+  </div>
 </body>
 </html>
