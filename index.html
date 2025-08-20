@@ -2,57 +2,35 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Оригинальные запчасти</title>
+  <title>Артур, хватит бухать!</title>
   <style>
     body {
       margin: 0;
       padding: 0;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: url("https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/assets/images/background.jpg") no-repeat center center fixed;
-      background-size: cover;
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     }
-    .content {
-      background: rgba(0, 0, 0, 0.6); /* затемнение */
-      color: #fff; /* белый текст */
-      text-align: center;
-      padding: 40px;
-      border-radius: 15px;
-      max-width: 600px;
-    }
+
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
+      font-size: 3em;
+      text-align: center;
+      animation: pulse 2s infinite;
     }
-    p {
-      font-size: 1.2rem;
-      line-height: 1.6;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: #ffcc00;
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background: #ffaa00;
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.9; }
+      100% { transform: scale(1); opacity: 1; }
     }
   </style>
 </head>
 <body>
-  <div class="content">
-    <h1>Оригинальные запчасти</h1>
-    <p>Запчасти для легковых и грузовых автомобилей<br>Доставка по всему миру</p>
-    <a href="mailto:info@bsParts.info" class="btn">Связаться с нами</a>
-  </div>
+  <h1>Артур, хватит бухать!</h1>
 </body>
 </html>
