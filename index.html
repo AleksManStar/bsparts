@@ -1,36 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Артур, хватит бухать!</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #1f1c2c, #928dab);
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Arial', sans-serif;
-      color: #fff;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-    }
-
-    h1 {
-      font-size: 3em;
-      text-align: center;
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.05); opacity: 0.9; }
-      100% { transform: scale(1); opacity: 1; }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Рома, хватит</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Артур, хватит бухать!</h1>
+  <div class="container">
+    <h1 id="message">Рома, хватит пиздеть, иди работай</h1>
+  </div>
+  <audio id="bg-music" src="audio.mp3" autoplay loop></audio>
+  <script src="script.js"></script>
 </body>
 </html>
