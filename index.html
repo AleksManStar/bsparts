@@ -1,54 +1,53 @@
-<!DOCTYPE html>
+<!-- index.html -->
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Оригинальные запчасти</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ну что, пойдем телек смотреть? 😈</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      display: grid;
+      place-items: center;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(circle at 30% 20%, #1f2633, #0f1320 60%);
+      color: #fff;
+    }
+    .wrap {
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 5rem);
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+      text-shadow: 0 2px 20px rgba(0,0,0,.35);
+      animation: pop .6s ease-out both;
+    }
+    @keyframes pop {
+      from { transform: scale(.96); opacity: 0; }
+      to   { transform: scale(1);    opacity: 1; }
+    }
+    .cursor::after {
+      content: "┃";
+      display: inline-block;
+      animation: blink 1.2s steps(1, end) infinite;
+      margin-left: .1em;
+      opacity: .7;
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
 </head>
 <body>
-  <!-- Переключатель языков -->
-  <div class="lang-switcher">
-    <img src="assets/flags/ru.png" alt="Русский" onclick="setLanguage('ru')">
-    <img src="assets/flags/en.png" alt="English" onclick="setLanguage('en')">
-    <img src="assets/flags/fr.png" alt="Français" onclick="setLanguage('fr')">
-    <img src="assets/flags/es.png" alt="Español" onclick="setLanguage('es')">
-    <img src="assets/flags/de.png" alt="Deutsch" onclick="setLanguage('de')">
+  <div class="wrap">
+    <h1 class="cursor">ну что, пойдем телек смотреть? 😈</h1>
   </div>
-
-  <!-- Приветственный текст -->
-  <section class="hero">
-    <h1 id="hero-text">
-      Привет, ищешь оригинальные детали для авто? <br>
-      Скажи мне что тебя интересует и я помогу..
-    </h1>
-  </section>
-
-  <!-- Чат-бот -->
-  <section class="chatbot">
-    <h2 id="chat-title">Чат-бот</h2>
-    <div class="chat-window" id="chat-window"></div>
-    <div class="chat-input">
-      <input type="text" id="user-input" placeholder="Напишите сообщение...">
-      <button onclick="sendMessage()">Отправить</button>
-    </div>
-  </section>
-
-  <!-- Форма обратной связи -->
-  <section class="contact">
-    <h2 id="form-title">Форма обратной связи</h2>
-    <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <input type="text" name="name" placeholder="Ваше имя" required>
-      <input type="text" name="contact" placeholder="Ваш контакт (телефон или email)" required>
-      <input type="text" name="part" placeholder="Интересующая вас деталь" required>
-      <textarea name="message" placeholder="Ваше сообщение" required></textarea>
-      <button type="submit">Отправить</button>
-    </form>
-    <p id="form-response" style="display:none; color:lime; margin-top:10px;">
-      Наш агент свяжется с вами в кратчайшее время.
-    </p>
-  </section>
-
-  <script src="script.js"></script>
 </body>
 </html>
