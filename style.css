@@ -1,80 +1,31 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: url("assets/images/background.jpg") no-repeat center center fixed;
-  background-size: cover;
-  color: white;
-  text-align: center;
+  background: #f9f9f9;
+  color: #333;
 }
-
-.lang-switcher {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-}
-.lang-switcher img {
-  width: 32px;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.hero {
-  margin-top: 100px;
-  padding: 40px;
-  background: rgba(0,0,0,0.6);
-  border-radius: 15px;
-  display: inline-block;
-}
-
-.chatbot {
-  margin: 50px auto;
-  max-width: 600px;
-  background: rgba(0,0,0,0.6);
-  padding: 20px;
-  border-radius: 15px;
-}
-.chat-window {
-  height: 200px;
-  overflow-y: auto;
+header {
   background: #222;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-}
-.chat-message {
-  margin: 5px 0;
-}
-.chat-message.user { color: #ffcc00; }
-.chat-message.bot { color: #00ffcc; }
-
-.chat-input input {
-  width: 70%;
-  padding: 8px;
-}
-.chat-input button {
-  padding: 8px 15px;
-  margin-left: 5px;
-  cursor: pointer;
-}
-
-.contact {
-  margin: 50px auto;
-  max-width: 600px;
-  background: rgba(0,0,0,0.6);
-  padding: 20px;
-  border-radius: 15px;
-}
-.contact input, .contact textarea {
-  width: 90%;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 8px;
-  border: none;
-}
-.contact button {
-  background: #ffcc00;
-  border: none;
+  color: #fff;
   padding: 10px 20px;
-  font-weight: bold;
-  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+main {
+  padding: 20px;
+}
+footer {
+  background: #eee;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
 }
